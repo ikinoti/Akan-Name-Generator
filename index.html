@@ -9,90 +9,95 @@
 </head>
 <body>
 
-  <h1>Akan Name Generator</h1>
-  <div class="container">
-    <div class="jumbotron">
-      <h1>Akan Name history</h1>
-      <p class="lead">Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.</p>
-      <p>The table bellow shows bothe gender names for each day of the week.</p>
-      <div class="table-responsive-md">
-        
-        <table class="table table-hover">
-          <caption>Akan Names as per Gender</caption>
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">Day of the Week</th>
-              <th scope="col">Male Names</th>
-              <th scope="col">Female Names</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td scope="row">Sunday</td>
-              <td>Kwasi</td>
-              <td>Akosua</td>
-            </tr>
-            <tr>
-              <td scope="row">Monday</td>
-              <td>Kwadwo</td>
-              <td>Adwoa</td>
-            </tr>
-            <tr>
-              <td scope="row">Tuesday</td>
-              <td>Kwabena</td>
-              <td>Abenaa</td>
-            </tr>
-            <tr>
-              <td scope="row">Wednesday</td>
-              <td>Kwaku</td>
-              <td>Akua</td>
-            </tr>
-            <tr>
-              <td scope="row">Thursday</td>
-              <td>Yaw</td>
-              <td>Yaa</td>
-            </tr>
-            <tr>
-              <td scope="row">Friday</td>
-              <td>Kofi</td>
-              <td>Afua</td>
-            </tr>
-            <tr>
-              <td scope="row">Saturday</td>
-              <td>Kwame</td>
-              <td>Ama</td>
-            </tr>
-          </tbody>
-        </table>
+  <div class="container-fluid text-justify">
+
+    <h1 class="">Akan Name Generator</h1>
+    <div class="container align-middle">
+      <div class="jumbotron">
+        <h1>Akan Name history</h1>
+        <p class="lead">Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.</p>
+        <p>The table bellow shows bothe gender names for each day of the week.</p>
+        <div class="table-responsive-md">
+          
+          <table class="table table-hover">
+            <caption>Akan Names as per Gender</caption>
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Day of the Week</th>
+                <th scope="col">Male Names</th>
+                <th scope="col">Female Names</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">Sunday</td>
+                <td>Kwasi</td>
+                <td>Akosua</td>
+              </tr>
+              <tr>
+                <td scope="row">Monday</td>
+                <td>Kwadwo</td>
+                <td>Adwoa</td>
+              </tr>
+              <tr>
+                <td scope="row">Tuesday</td>
+                <td>Kwabena</td>
+                <td>Abenaa</td>
+              </tr>
+              <tr>
+                <td scope="row">Wednesday</td>
+                <td>Kwaku</td>
+                <td>Akua</td>
+              </tr>
+              <tr>
+                <td scope="row">Thursday</td>
+                <td>Yaw</td>
+                <td>Yaa</td>
+              </tr>
+              <tr>
+                <td scope="row">Friday</td>
+                <td>Kofi</td>
+                <td>Afua</td>
+              </tr>
+              <tr>
+                <td scope="row">Saturday</td>
+                <td>Kwame</td>
+                <td>Ama</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
+
+      <h3>Find out your </h3>
+      <form class="text-left">
+        <div class="form-group">
+          <label for="year">Year of Birth</label>
+          <input type="number" class="form-control" id="birthYear" placeholder="Enter year of birth. e.g. 1990">
+        </div>
+        <div class="form-group">
+          <label for="birthMonth">Month</label>
+          <input type="number" class="form-control" id="birthMonth" placeholder="Month you were born e.g 07 'for July'">
+        </div>
+        <div class="form-group">
+          <label for="birthDate">Day</label>
+          <input type="number" class="form-control" id="birthDate" placeholder="Enter the date of birth.">
+        </div>
+        <label for="gender" class="d-block">Gender</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">Female</label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary d-block m-2 p-2">Submit</button>
+      </form>
     </div>
 
-    <h3>Find out your </h3>
-    <form>
-      <div class="form-group">
-        <label for="year">Year of Birth</label>
-        <input type="number" class="form-control" id="birthYear" placeholder="Enter year of birth. e.g. 1990">
-      </div>
-      <div class="form-group">
-        <label for="birthMonth">Month</label>
-        <input type="number" class="form-control" id="birthMonth" placeholder="Month you were born e.g 07 'for July'">
-      </div>
-      <div class="form-group">
-        <label for="birthDate">Day</label>
-        <input type="number" class="form-control" id="birthDate" placeholder="Enter the date of birth.">
-      </div>
-      <label for="gender">Gender</label>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-        <label class="form-check-label" for="inlineRadio1">Male</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-        <label class="form-check-label" for="inlineRadio2">Female</label>
-      </div>
-      
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
   </div>
+  
 </body>
 </html>
