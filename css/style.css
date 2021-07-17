@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Rock+Salt&display=swap');
+
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Rock Salt', cursive; */
+
+#header{
+  font-family: 'Rock Salt', cursive;
+  text-shadow: 2px 2px 8px #743f03;
+}
