@@ -49,4 +49,4 @@ If you have any question or contributions, please email me at [isaiah.gitonga@st
 
 ## License
 * *MIT License:*
-* Copyright (c) 2019 **Kinoti Gitonga**
+* Copyright (c) 2021 **Kinoti Gitonga**
