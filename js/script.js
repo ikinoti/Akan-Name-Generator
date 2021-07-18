@@ -3,7 +3,7 @@ let dayNames = ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday","S
 let maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw", "Kofi","Kwame"];
 let femaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
 let myForm = document.forms.myForm;
-let genders = document.getElementsByName("gender");
+
 
 function birthdayDayValue(){
   year = document.getElementById("birthYear").value;
@@ -16,3 +16,16 @@ function birthdayDayValue(){
 
 }
 
+function choosedGender(){
+  let genders = document.getElementsByName("gender");
+
+  if (genders[0].checked == true){
+    var gender = "male";
+  }else if(genders[1].checked == true){
+    var gender = "female"
+  }else{
+    return false;
+  }
+
+  
+}
