@@ -2,7 +2,7 @@
 
 ## Author
 
-[Kinoti Gitonga]
+Kinoti Gitonga
 
 ## Description
 
