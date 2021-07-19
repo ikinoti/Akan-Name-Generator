@@ -1,35 +1,73 @@
+function generateAkanName() {
+  var dob = document.getElementById("dob").value;
+  var dob = new Date(dob);
+  var name = '';
+  var gender = '';
 
+  function radioValue() {
+      var gndr = document.getElementsByName('gender');
 
-
-function generateAkanName(){
-  
-  var weekDays = ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday","Saturday"];
-  var maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw", "Kofi","Kwame"]
-  var femaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"]
-  var birthday= document.getElementsById("birthday").value;
-  var genders = document.getElementsByName("gender");
-  var birthDate = new Date(birthday);
-  var dayOfWeek = birthDate.getDay();
-  
-
-  if(birthday === ""){
-    alert(`You should enter a valid date. e.g 01/01/1900`);
-  }
-  else 
-  {
-    for(var i = 0; i < genders.length; i++){
-      if(genders[i].checked){
-        if(genders[i].value === "Male"){
-          alert(`Your were born on ${weekDays[dayOfWeek]} and your Akan Name is ${maleNames[dayOfWeek]}`);
-        }
-        else{
-          alert(`Your were born on ${weekDays[dayOfWeek]} and your Akan Name is ${femaleNames[dayOfWeek]}`);
-        }
-        break;
+      for (i = 0; i < gndr.length; i++) {
+          if (gndr[i].checked){
+              gender = gndr[i].value;
+          }
+          break;
       }
-      else{
-        alert(`You have not selected your gender`);
-      }
-    }
+      return gender;
   }
-}  
+
+  gender = radioValue();
+  // document.getElementById("genderp").innerHTML = gender;
+
+
+  var weekday = new Array(7);
+  weekday[0] = "Sunday";
+  weekday[1] = "Monday";
+  weekday[2] = "Tuesday";
+  weekday[3] = "Wednesday";
+  weekday[4] = "Thursday";
+  weekday[5] = "Friday";
+  weekday[6] = "Saturday";
+
+  var maleNames = new Array(7);
+  maleNames[0] = "Kwasi";
+  maleNames[1] = "Kwadwo";
+  maleNames[2] = "Kwabena";
+  maleNames[3] = "Kwaku";
+  maleNames[4] = "Yaw";
+  maleNames[5] = "Kofi";
+  maleNames[6] = "Kwame";
+
+  var femaleNames = new Array(7);
+  femaleNames[0] = "Akosua";
+  femaleNames[1] = "Adwoa";
+  femaleNames[2] = "Abenaa";
+  femaleNames[3] = "Akua";
+  femaleNames[4] = "Yaa";
+  femaleNames[5] = "Afua";
+  femaleNames[6] = "Ama";
+
+
+  console.log(typeof(gender));
+
+  if (gender == "Male") {
+      name = maleNames[dob.getDay()];
+  } else if (gender == "Female") {
+      name = femaleNames[dob.getDay()];
+  } else {
+      name = "Wrong";
+  }
+
+  document.getElementById("description").innerHTML = "You were born on " + weekday[dob.getDay()] + " and your Akan name is " + name;
+
+
+  return false;
+  
+}
+// function clearAkanMessage(){
+//   document.getElementById("description").innerHTML = "";
+//   return true;
+// }
+
+
+
