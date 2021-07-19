@@ -12,7 +12,7 @@ This project is a web application that takes a user's birthday and compute the d
 <img src="./images/akan.png" width="800px" height="400px">
 
 ## Live Page 
- 
+ https://ikinoti.github.io/Akan-Name-Generator/
 
 
 ## Installation / Setup instruction
