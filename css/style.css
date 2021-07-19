@@ -8,3 +8,9 @@ font-family: 'Rock Salt', cursive; */
   font-family: 'Rock Salt', cursive;
   text-shadow: 2px 2px 8px #743f03;
 }
+.container{
+  font-family: 'Lato', sans-serif
+}
+#footer{
+  width: 50px !important;
+}
