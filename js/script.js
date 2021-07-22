@@ -8,16 +8,14 @@ function generateAkanName() {
       var gndr = document.getElementsByName('gender');
 
       for (i = 0; i < gndr.length; i++) {
-          if (gndr[i].checked){
+          if (gndr[i].checked)
               gender = gndr[i].value;
-          }
-          break;
       }
       return gender;
   }
 
   gender = radioValue();
-  // document.getElementById("genderp").innerHTML = gender;
+  document.getElementById("genderp").innerHTML = gender;
 
 
   var weekday = new Array(7);
